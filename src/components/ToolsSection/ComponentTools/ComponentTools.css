@@ -1,0 +1,117 @@
+#techImmediateCon {
+    position: relative;
+    height: 400px;
+    width: 45vw;
+}
+.techProper:nth-child(1) {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #00002B;
+    color: white;
+}
+.techProper:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 40%;
+    background-color: #000055;
+    color: white;
+}
+.techProper:nth-child(3) {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: #FF6600;
+
+}
+.techProper:nth-child(4) {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #FFB800;
+}
+.techProper:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    background-color: #5B5B5B;
+    color: white;
+}
+.techProper:nth-child(6) {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-color: #004155;
+    color: white;
+}
+.techProper:nth-child(7) {
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+    background-color: #8FFF00;
+}
+@media only screen and (max-width:720px) {
+    #techImmediateCon {
+        width: 80vw;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "html css"
+            "javascript javascript"
+            "react redux"
+            "php sql"
+        ;
+        justify-content: stretch;
+        justify-items: end;
+        column-gap: 0;
+    }
+    #techImmediateCon * {
+        width: 50%;
+        height: fit-content;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+    }
+    .techProper:nth-child(1) {
+        position: static;
+        grid-area: javascript;
+        justify-self: start;
+
+    }
+    .techProper:nth-child(2) {
+        position: static;
+        grid-area: css;
+        
+    }
+    .techProper:nth-child(3) {
+        position: static;
+        grid-area: html;
+        justify-self: start;
+    }
+    .techProper:nth-child(4) {
+        position: static;
+        grid-area: redux;
+    }
+    .techProper:nth-child(5) {
+        position: static;
+        grid-area: php;
+        justify-self: start;
+    }
+    .techProper:nth-child(6) {
+        position: static;
+        grid-area: react;
+        justify-self: start;
+    }
+    .techProper:nth-child(7) {
+        position: static;
+        grid-area: sql;
+      
+    }
+
+}
+@media screen and (min-width:721px) and (max-width:811px) {
+    #techImmediateCon {
+        width: 80vw;
+    }
+}

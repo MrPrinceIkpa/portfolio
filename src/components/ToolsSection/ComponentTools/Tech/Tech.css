@@ -1,0 +1,8 @@
+.techButton {
+    padding: 1em;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    font-size: 170%;
+}

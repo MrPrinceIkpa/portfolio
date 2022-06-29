@@ -1,0 +1,42 @@
+.contactSection {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    margin-top: -6vh;
+}
+.contactSection h3 {
+    margin: 20vh 0 10vh 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #00002bff;
+}
+.contactSection * {
+    grid-column: 2 / 4;
+}
+#reachCon {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    margin: 10vh 0 20vh 0;
+}
+#reachCon *{
+    grid-column: 1 / 4;
+}
+@media only screen and (max-width:720px) {
+    .contactSection {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        margin-top: -7vh;
+    }
+    .contactSection * {
+        grid-column: 2 / 4;
+    }
+    .contactSection h2 {
+        margin: 20vh 0 0vh 0;
+    }
+    #reachCon {
+        margin: 7vh 0 20vh 0;
+        place-items: start;
+    }
+}

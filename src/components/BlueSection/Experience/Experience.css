@@ -1,0 +1,59 @@
+#experienceSection {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "head head head"
+        "job job job"
+        "foot foot foot"
+    ;
+}
+#experienceSection > h3 {
+    margin: 25vh 0 12vh 0;
+    grid-area: head;
+    font-size: 2em;
+    font-weight: 600;
+}
+#jobsContainer {
+    grid-area: job;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#experienceSection a, #experienceSection a:visited {
+    margin: 10vh 0 5vh 0;
+    grid-area: foot;
+    justify-self: center;
+    color: #4d4d4dff;
+    text-decoration: none;
+    cursor: pointer;
+}
+#experienceSection a:hover {
+    color: white;
+}
+@media only screen and (max-width:720px) {
+    #experienceSection {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "head head head"
+            "job job job"
+            "foot foot foot"
+        ;
+    }
+    #jobsContainer {
+        justify-self: center;
+        grid-area: job;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    #experienceSection a {
+        display: grid;
+        width: 100%;
+        place-items: center;
+        margin-bottom: 0vh;
+    }
+}

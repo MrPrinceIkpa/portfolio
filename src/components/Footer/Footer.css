@@ -1,0 +1,10 @@
+footer {
+    display: grid;
+    place-items: center;
+}
+footer div {
+    max-width: 100vw;
+}
+@media only screen and (max-width:720px) {
+    
+}

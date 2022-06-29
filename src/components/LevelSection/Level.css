@@ -1,0 +1,64 @@
+#levelSection {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    min-height: 60vh;
+    row-gap: 10vh;
+    margin-bottom: 10vh;
+}
+#levelHeader {
+    width: 90vw;
+    font-size: 2em;
+    font-weight: 700;
+    color: #00002bff;
+}
+#skillContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #00002bff;
+    border-radius: 60px;
+    font-size: 1.5em;
+    align-items: center;
+    color: white;
+}
+.skill:nth-child(1) {
+    flex-basis: 75%;
+    background-color: white;
+    color: #00002bff;
+    padding: 1.6em 1.5em 1.6em 3em;
+    border-radius: 60px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    justify-self: center;
+}
+.skill:nth-child(2) {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+#levelContentContainer {
+    display: grid;
+    place-items: center;
+}
+#ratio {
+    font-size: 1.8em;
+    font-weight: 750;
+    margin-top: 5vh;
+}
+@media only screen and (max-width:720px) {
+    #levelHeader {
+        place-self: center;
+        display: grid;
+        place-items: center;
+    }
+    #ratio {
+        font-size: 2.3em;
+        font-weight: 300;
+    }
+    #skillContainer {
+        box-shadow: rgb(211, 211, 211) 0.7em -0.1em 2em;
+        margin-top: -10vh;
+        align-self: start;
+    }
+
+}

@@ -1,0 +1,33 @@
+.reachmeText {
+    text-align: center;
+    max-width: 30vw;
+    font-size: 1.3em;
+}
+#reach {
+    text-decoration: none;
+    color: #00002bff;
+    font-weight: 600;
+    background-color: #ff6600ff;
+    padding: 0.7em 1em 0.7em 1em;
+    border-radius: 40px;
+    margin-top: 4vh;
+
+    transition-property: color, background-Color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+#reach:hover {
+    color: #ff6600ff;
+    background-color: #00002bff;
+}
+@media only screen and (max-width:720px) {
+    .reachmeText {
+        text-align: left;
+        max-width: 100vw;
+    }
+    #reach {
+        min-width: 30%;
+        padding-top: 0.9em;
+        padding-bottom: 0.9em;
+    }
+}

@@ -1,0 +1,49 @@
+.job_role {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 37%;
+    min-width: 37%;
+    margin-bottom: 2vh;
+
+}
+.lister {
+    max-width: 0.3em;
+    max-height: 0.3em;
+    width: 0.3em;
+    height: 0.3em;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #FF6600;
+}
+.roleProper {
+    flex-basis: 3fr;
+    text-align: right;
+}
+.jobClass {
+   max-width: 40%;
+}
+.jobTitle {
+    font-size: 1.8em;
+    text-align: justify;
+}
+.jobRoles {
+    margin-top: 7vh;
+    color: #B9B9B9;
+}
+@media only screen and (max-width:720px) {
+    .jobClass {
+        max-width: 100%;
+        margin-top: 9vh;
+    }
+    .jobClass:nth-child(1) {
+        margin-top: 0vh;
+    }
+    .job_role {
+        min-width: 100%;
+    }
+    #jobRoles{
+        width: 100%;
+    }
+}

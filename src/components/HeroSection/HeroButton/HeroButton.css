@@ -1,0 +1,59 @@
+#heroButtonAnchor, #heroButtonAnchor:visited {
+    text-decoration: none;
+    
+}
+#heroButton {
+   width: 8em;
+   padding: 0.5em;
+   padding-left: 1em;
+   padding-right: 0em;
+   background-color: #000055;
+   border-radius: 30px;
+   position: relative;
+   font-size: 1.5em;
+   color: white;
+   cursor: pointer;
+   transition-duration: 0.4s;
+   transition-property: box-shadow, transform;
+
+   animation-name: bounce;
+   animation-delay: 1.3s;
+   animation-duration: 1.8s;
+   animation-iteration-count: 1;
+}
+#heroButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 1.2em #ff6600a2;
+}
+@keyframes bounce {
+    0% {
+        transform: none;
+        box-shadow: none;
+    }
+    25% {
+        transform: translateY(-13px);
+        box-shadow: none;
+    }
+    65% {
+        transform: translateY(13px);
+        box-shadow: 5px 5px 1.2em #ff6600a2;
+    }
+    100% {
+        transform: none;
+        box-shadow: none;
+    }
+}
+#iconContainer {
+    width: 1.6em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    background-color: #FF6600;
+    border-radius: 50%;
+}
+.buttonIcon {
+    width: 70%;
+    height: auto;
+
+}

@@ -1,0 +1,28 @@
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 5em;
+    justify-content: center;
+    
+    width: 80vw;
+
+    list-style: none;
+    font-weight: bolder;
+    background-color:#00002B;
+  
+    margin: 2em auto 2em auto;
+    border-radius: 30px;
+    padding: 0.9em;
+}
+.navChild, .navChild a, .navChild a:visited {
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 0.3em;
+    text-decoration: none;
+}
+.navChild:hover, .navChild a:hover {
+    background-color: white;
+    color: #00002B;
+}

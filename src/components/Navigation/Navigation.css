@@ -1,0 +1,15 @@
+
+#globalDesktopNav {
+    display:block
+}
+#globalMobileNav {
+    display: none;
+}
+@media screen and (max-width:812px) {
+    #globalDesktopNav {
+        display:none
+    }
+    #globalMobileNav {
+        display: block;
+    }
+}

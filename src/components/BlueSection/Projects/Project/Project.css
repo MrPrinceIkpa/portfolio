@@ -1,0 +1,20 @@
+.projectProper {
+    max-width: 30vw;
+    min-width: 30vw;
+    max-height: auto;
+    margin: auto;
+}
+.projectProper img {
+    max-width: 100%;
+    height: auto; 
+}
+.projectProper p {
+    text-align: center;
+    font-weight: 400;
+}
+@media only screen and (max-width:720px) {
+    .projectProper {
+        max-width: 60vw;
+        min-width: 60vw;
+    }
+}

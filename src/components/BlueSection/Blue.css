@@ -1,0 +1,21 @@
+#blueSection {
+    display: grid;
+    justify-items: start;
+    justify-content: center;
+    width: 100vw;
+    background-color: #000055;
+    color: white;
+    position: relative;
+    top: -6vh;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+    width: 100%;
+}
+#blueSection div {
+  width: 80vw;
+}
+@media only screen and (max-width:720px) {
+    #blueSection section {
+      width: 90vw;
+    }
+}

@@ -1,0 +1,24 @@
+#toolSection {
+    display: grid;
+    place-items: center;
+    width: 90vw;
+    margin-left: 5vw;
+    row-gap: 10vh;
+}
+#toolSectionH {
+    justify-self: start;
+    font-size: 2.1em;
+    font-weight: 700;
+    color: #00002bff;
+}
+@media only screen and (max-width:720px) {
+    #toolSection {
+        margin-left: 0vw;
+        justify-content: center;
+        margin:auto;
+    }
+    #toolSectionH {
+        justify-self: center;
+    }
+    
+}

@@ -1,0 +1,24 @@
+#projectsSection > h3 {
+    margin: 20vh 0 10vh 0; 
+    font-size: 2em;
+    font-weight: 600;
+}
+#projectsSection p {
+    margin: 10vh 0 20vh 0;
+}
+#projectsSection p a, #projectsSection p a:visited {
+    color: #4d4d4dff;
+    text-decoration: none;
+    cursor: pointer;
+}
+#projectsSection p a:hover {
+    color: white;
+}
+@media only screen and (max-width:720px) {
+    #projectsSection {
+        display: grid;
+    }
+    #projectsSection div {
+        justify-self: center;
+    }
+}

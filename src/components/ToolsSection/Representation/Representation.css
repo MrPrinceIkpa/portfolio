@@ -1,0 +1,21 @@
+#repContainer {
+    display: grid;
+    place-items: center;
+}
+#repImgContainer {
+    width: 50%;
+}
+#repImgContainer img {
+    width: 100%;
+    height: auto;
+}
+#repTextContainer {
+    text-align: center;
+    font-size: 1.6em;
+}
+@media only screen and (max-width:720px) {
+    #repImgContainer {
+        width: 90%;
+    }
+
+}
